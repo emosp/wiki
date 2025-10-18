@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "emos"
   text: "新服开测 一起玩呀"
-  tagline: 不删档内测中 不限客户端 无须保号
+  tagline: 欢迎加入我们 大家一起享受快乐观影时光
   actions:
     - theme: brand
       text: 了解更多

@@ -10,14 +10,14 @@ export default defineConfig({
   lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: '/favicon.svg',
+    logo: 'https://emos.lol/favicon.svg',
     search: {
-      provider: 'local'
+      provider: 'local',
     },
     nav: [{ text: '主页', link: 'https://emos.lol/' }],
     socialLinks: [{ icon: 'github', link: 'http://github.com/emosp/home' }],
     editLink: {
-      pattern: 'http://github.com/emosp/home/edit/main/docs/:path',
+      pattern: 'http://github.com/emosp/wiki/edit/main/docs/:path',
       text: '在 GitHub 上编辑此页面',
     },
     docFooter: {
@@ -38,8 +38,16 @@ export default defineConfig({
             link: '/introduction/muttering',
           },
           {
+            text: '入群须知',
+            link: '/introduction/join_group',
+          },
+          {
             text: '设计思路',
             link: '/introduction/design',
+          },
+          {
+            text: '兼容性列表',
+            link: '/introduction/compatibility',
           },
         ],
       },
@@ -54,6 +62,10 @@ export default defineConfig({
       {
         text: '榜单',
         link: '/ranking',
+      },
+      {
+        text: '大史记',
+        link: '/news',
       },
       {
         text: 'api',
