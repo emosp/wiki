@@ -79,6 +79,18 @@ export default defineConfig({
             text: '使用',
             link: '/api/use',
           },
+          {
+            text: '连接',
+            link: '/api/link',
+          },
+          {
+            text: '上传相关',
+            link: '/api/upload',
+          },
+          {
+            text: '获取视频ItemId',
+            link: '/api/get_video_item_id',
+          },
         ],
       },
     ],
