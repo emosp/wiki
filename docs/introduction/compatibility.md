@@ -41,6 +41,6 @@
 
 关于为啥其他软件不兼容，编辑认为腐竹说的比较在理：
 
-![难绷](https://www.helloimg.com/i/2025/09/30/68db62bedd872.png)
+![难绷](../assets/image/compatibility/68db62bedd872.png)
 
 自行理解吧.....哎~
