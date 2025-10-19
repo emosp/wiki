@@ -6,12 +6,19 @@
 
 - `GET` `/api/video/getItemId?type=[type]&title=[title]&tmdb_id=[tmdb_id]&video_id=[video_id]`
 
-## 请求参数
+> 小贴士：如果使用 `emos` 接口，则为 `https://emos.lol/api/video/getItemId?type=[type]&title=[title]&tmdb_id=[tmdb_id]&video_id=[video_id]` 
 
-- `type` 视频类型 `movie` 电影 | `tv` 电视
-- `title` 搜索的标题 模糊搜索
-- `tmdb_id` [tmdb](https://www.themoviedb.org/) 中id 传时建议带入 `type`
-- `video_id` 视频id
+## 请求参数
+> 提示：参数为必选的 可以都写 也可以二选一
+- `type` 视频类型 `movie` 电影 | `tv` 电视（可选）
+- `title` 搜索的标题 模糊搜索（必选）
+- `tmdb_id` [tmdb](https://www.themoviedb.org/) 中id（必选）
+- `video_id` 视频id（可选）
+
+## 返回状态
+- `200` 成功请求
+- `401` 认证参数无效
+- `405` 请求方法无效
 
 ## 响应内容
 
