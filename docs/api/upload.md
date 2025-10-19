@@ -1,5 +1,7 @@
 # 上传相关
 
+- 需 带入 `authorization` 头部
+
 > 上传分为 `视频` `字幕` `图片` 等, 分为3步 获取基本信息 -> 获取上传token -> 保存上传结果
 
 ## 获取上传token
@@ -62,7 +64,7 @@ fetch(upload_url, {
 
 #### 请求参数
 
-- `item_type` 资源类型 `vl` 或 `ve`
+- `item_type` 资源类型 电影类型的 `vl` 或 电视剧类型的 `ve`
 - `item_id` 资源id
 
 #### 响应内容
