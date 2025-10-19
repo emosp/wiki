@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: 'emos wiki',
+  description: 'emos wiki',
   srcDir: './docs',
   lang: 'zh-CN',
   base: '/',
