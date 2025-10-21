@@ -92,6 +92,10 @@ export default defineConfig({
             text: '获取视频ItemId',
             link: '/api/get_video_item_id',
           },
+          {
+            text: '媒体库',
+            link: '/api/library',
+          },
         ],
       },
     ],

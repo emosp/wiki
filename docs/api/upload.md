@@ -56,6 +56,17 @@ fetch(upload_url, {
 })
 ```
 
+#### r2
+
+```js
+let file = File
+
+fetch(upload_url, {
+    method: 'PUT',
+    body: file,
+})
+```
+
 ## 视频相关
 
 ### 获取基本信息
