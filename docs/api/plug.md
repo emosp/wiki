@@ -31,6 +31,6 @@
 
 ### 示例
 
-```curl
+```bash
 curl --location 'http://127.0.0.1:8000/api/plug/sendTelegramMessage' --header 'Authorization: ••••••' --form 'to="group"' --form 'text="发送内容"' --form 'parse_mode="HTML"' --form 'destroy_second="10"'
 ```
