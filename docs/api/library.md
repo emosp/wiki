@@ -90,6 +90,8 @@
             "media_count": 12,
             // 点播ID
             "seek_id": 1,
+            // 是否进行了点播
+            "seek_is_request": true,
             // 点播总数
             "request_count": 1,
             // 别名总数
@@ -112,6 +114,7 @@
             "video_date_air": "2011-10-24",
             "media_count": 0,
             "seek_id": 0,
+            "seek_is_request": false,
             "request_count": 0,
             "title_alias_count": 0,
             "is_delete": false
@@ -191,6 +194,7 @@
 
 - `video_id` 视频ID
 - `with_seek` 是否包含认领信息 `0` 或 `1` 默认为 `0` 不包含
+- `with_seek_is_request` 是否包含是否点播信息 `0` 或 `1` 默认为 `0` 不包含
 
 `item_type` 均为 `ve`
 
@@ -247,6 +251,19 @@
         "medias_count": 0,
         // 有资源时 seek 也会为空 此时也不可认领
         "seek": null
+    },
+
+    // 包含了是否点播信息的
+    {
+        "episode_id": 53976,
+        "episode_title": "最喜欢你了",
+        "episode_number": 1,
+        "season_id": 3810,
+        "season_title": "第 1 季",
+        "season_number": 1,
+        "date_air": "2018-03-28",
+        "medias_count": 0,
+        "with_seek_is_request": false
     },
 ]
 ```

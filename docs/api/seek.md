@@ -1,8 +1,8 @@
 # 点播
 
-在 [`视频列表`](./library.md#视频列表) 返回了 `seek_id` 点播ID
+在 [`视频列表`](./library.md#视频列表) 返回了 `seek_id` 点播ID 和 `seek_is_request` 字段
 
-在 [`获取电视集列表`](./library.md#获取电视集列表) 返回了 `seek` 认领信息
+在 [`获取电视集列表`](./library.md#获取电视集列表) 返回了 `seek` 认领信息 与 `seek_is_request` 字段
 
 ## 参数字典
 
@@ -13,6 +13,21 @@
 - `complete` 完成
 - `cancel` 取消
 - `forget` 遗忘
+
+## 点播/取消点播
+
+> 只支持 电影的 `vl` 和 电视的 `ve`
+
+`PUT` `/api/seek/apply?item_type=[item_type]&item_id=[item_id]`
+
+- `item_type` 和 `item_id` 与获取基本信息相同
+
+```json
+{
+    // 是否进行了点播 再次请求时服务端会自己进行更新
+    "seek_is_request": true
+}
+```
 
 ## 获取点播记录
 
@@ -45,7 +60,7 @@
 
 ## 查询认领信息
 
-只有存在 `seek_id` 时才可进行查询 
+只有存在 `seek_id` 时才可进行查询
 
 > 根据 `video_type` 字段 `movie`单独查 `tv`可以用`seek`中内容
 
@@ -98,7 +113,7 @@
 
 ## 认领/取消认领
 
-可以操作 认领信息中 `status` 状态为 `default` 或者是自己认领的 
+可以操作 认领信息中 `status` 状态为 `default` 或者是自己认领的
 
 `PUT` `/api/seek/claim`
 
