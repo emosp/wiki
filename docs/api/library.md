@@ -335,6 +335,15 @@
 - `item_type` 目标资源类型 必传
 - `item_id` 目标资源ID 必传
 
+## 重命名视频的媒体资源
+
+重命名视频下面的某项媒体资源 比如将 `2K - 上传` 重命名成 `2k`
+
+`PUT` `/api/video/media/rename?media_uuid=[media_uuid]&name=[name]`
+
+- `media_uuid` 媒体资源UUID 必传
+- `name` 新名称 20字符内
+
 ## 获取视频的字幕列表
 
 `GET`
