@@ -176,3 +176,54 @@ fetch(upload_url, {
     "subtitle_id": "7lZgdJVaov"
 }
 ```
+
+## 挂载上传
+
+> 需单独开通
+
+```text
+文件夹名称必须包含 [tmdbid=xxx]
+
+电视类型 资源文件名必须包含 SxxExx
+/files/pending/tv
+└── [tmdbid=225171]Pluribus
+    ├── Season01
+    │   ├── S01E01.mkv
+    │   └── S01E01.srt
+    └── S02E01.mkv
+
+电影类型
+/files/pending/movie
+└── [tmdbid=872585]奥本海默
+    ├── video.ass
+    └── video.mkv
+```
+
+### 手动同步内容
+
+> 此接口为同步调用 可能存在超时情况
+
+`GET` `/api/upload/cloudSync/manual`
+
+```json
+{
+    // 同步成功的挂载数量
+    "success": 1
+}
+```
+
+### 获取同步日志
+
+> 只会显示错误的
+
+`GET` `/api/upload/cloudSync/log`
+
+```json
+[
+    {
+        "file_path": "/files/pending/movie/[tmdbid=872585]奥本海默/video.ass",
+        "message": "字幕文件格式不支持",
+        "created_at": "2025-11-29T16:31:39.000000Z"
+    }
+]
+```
