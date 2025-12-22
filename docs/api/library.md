@@ -298,7 +298,8 @@
         "episode_name": null,
         "episode_number": null,
         // 是否为自己上传
-        "is_self_upload": true
+        "is_self_upload": true,
+        "created_at": "2025-11-29T16:31:39.000000Z"
     },
     // 电视返回
     {
@@ -312,7 +313,8 @@
         "episode_id": 2333,
         "episode_name": "第 1 集",
         "episode_number": 1,
-        "is_self_upload": false
+        "is_self_upload": false,
+        "created_at": "2025-11-29T16:31:39.000000Z"
     },
 ]
 ```
@@ -356,7 +358,8 @@
     {
         "subtitle_id": "xWDKXEMv2E",
         "title": "RUOppenheimer_2023_2160p_IMAX_UHDRemux_HYBRID_HDR_DV_TheEqualizer",
-        "codec": "ass"
+        "codec": "ass",
+        "created_at": "2025-11-29T16:31:39.000000Z"
     }
 ]
 ```
