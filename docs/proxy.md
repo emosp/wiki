@@ -33,6 +33,11 @@
 
 - `https://emos.de5.net`
 
+### @axingjiuqi
+
+- `https://emos.078899.xyz`
+- `https://emos-cn.078899.xyz`
+
 ### @nullskd
 
 - `https://direct.emos.lol:15611`
