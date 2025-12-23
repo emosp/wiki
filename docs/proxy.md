@@ -38,6 +38,10 @@
 - `https://emos.078899.xyz`
 - `https://emos-cn.078899.xyz`
 
+### @liuerao
+
+- `https://emos.200038.xyz`
+
 ### @nullskd
 
 - `https://direct.emos.lol:15611`
