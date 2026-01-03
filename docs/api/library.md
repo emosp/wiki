@@ -297,6 +297,8 @@
         "episode_id": null,
         "episode_name": null,
         "episode_number": null,
+        // 字幕数量
+        "subtitle_count": 10,
         // 是否为自己上传
         "is_self_upload": true,
         "created_at": "2025-11-29T16:31:39.000000Z"
@@ -313,6 +315,7 @@
         "episode_id": 2333,
         "episode_name": "第 1 集",
         "episode_number": 1,
+        "subtitle_count": 0,
         "is_self_upload": false,
         "created_at": "2025-11-29T16:31:39.000000Z"
     },
@@ -356,9 +359,11 @@
 ```json
 [
     {
+        // 字幕ID
         "subtitle_id": "xWDKXEMv2E",
         "title": "RUOppenheimer_2023_2160p_IMAX_UHDRemux_HYBRID_HDR_DV_TheEqualizer",
         "codec": "ass",
+        "is_self_upload": true,
         "created_at": "2025-11-29T16:31:39.000000Z"
     }
 ]
@@ -369,3 +374,12 @@
 `DELETE` `/api/video/subtitle/delete?subtitle_id=[subtitle_id]`
 
 - `subtitle_id` 字幕ID
+
+## 重命名视频的字幕
+
+重命名视频下面的某项字幕名称 比如将 `简英chs&eng` 重命名成 `chs&eng`
+
+`PUT` `/api/video/subtitle/rename?subtitle_id=[subtitle_id]&name=[name]`
+
+- `subtitle_id` 字幕ID 必传
+- `title` 新名称 40字符内
