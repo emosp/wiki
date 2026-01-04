@@ -379,7 +379,7 @@
 
 重命名视频下面的某项字幕名称 比如将 `简英chs&eng` 重命名成 `chs&eng`
 
-`PUT` `/api/video/subtitle/rename?subtitle_id=[subtitle_id]&name=[name]`
+`PUT` `/api/video/subtitle/rename?subtitle_id=[subtitle_id]&title=[title]`
 
 - `subtitle_id` 字幕ID 必传
 - `title` 新名称 40字符内
